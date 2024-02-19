@@ -1,10 +1,8 @@
 #include <stdio.h>
 /**
- * main - the put func
- *
- * Description: Calls puts and recieves value returned by puts after its
- * execution.
- * Return: Always return 0 to indicate success
+ * main - Entry point
+ 
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
