@@ -1,4 +1,5 @@
 include<stdio.h>
+
 /**
  * maind .A program that prints the size of various computer types 
  *return 0 (Success)
@@ -7,7 +8,7 @@ int main(void)
 {
   char a;
   int b;
-  lont int c;
+  long int c;
   long long int d;
   float f;
 
