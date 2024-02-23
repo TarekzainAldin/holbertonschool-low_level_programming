@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
-* main - Nature made the natural numbers sum of all multiples of 3 or 5 up to 1024
-*Find the sum of all the multiples of 3 or 5 below 1000
+* main - Nature made the natural numbers sum of all multiples
+*Find the sum of all the multiples
 * Return:Always (0)
 */
 int main(void)
