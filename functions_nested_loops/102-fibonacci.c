@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- *main - thise f number
- *
+ *main- thise f number
+ * Return: Always 0.
  *the varaible numf& and numF
  */
 int main(void)
