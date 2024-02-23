@@ -8,11 +8,11 @@
 	int main(void)
 	{
 		int count;
-		int numf1 = 0, numf2 = 1, sum;
+		unsigned long numf1 = 0, numf2 = 1, sum;
 		for (count = 0; count < 50; count++)
 		{
 			sum = numf1 + numf2;
-			printf("%d", sum);
+			printf("%lu", sum);
 			numf1 = numf2;
 			numf2 = sum;
 			if (count == 49)
