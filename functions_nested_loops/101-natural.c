@@ -3,7 +3,7 @@
  *main Nature made the natural numbers sum of all multiples of 3 or 5 up to 1024
  * Return:Always (Success)
  */
-int main void (void)
+int main(void)
 {
   int i=0;
     int z =0;
