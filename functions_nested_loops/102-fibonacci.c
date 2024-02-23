@@ -12,7 +12,7 @@
 		for (count = 0; count < 50; count++)
 		{
 			sum = numf1 + numf2;
-			printf("%lu", sum);
+			printf("%d", sum);
 			numf1 = numf2;
 			numf2 = sum;
 			if (count == 49)
