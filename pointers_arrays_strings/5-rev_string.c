@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *   char *ptr = reverse(STR);
+ *char *ptr = reverse(STR);
  *
  * Reverse the characters of STR[] in place, and return STR.
  */
