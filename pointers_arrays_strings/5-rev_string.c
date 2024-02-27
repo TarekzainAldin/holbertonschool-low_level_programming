@@ -7,8 +7,10 @@
 void rev_string(char *s)
 {
 char ch, *p, *q;
+if (!s || *s == '\0')
+return;
 for (q = s; *q != '\0'; ++q)
-if (q > s)
+;
 --q;
 for (p = s; p < q; ++p, --q)
 ch = *p;
