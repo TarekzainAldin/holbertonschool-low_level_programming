@@ -4,9 +4,9 @@
  *
  * Reverse the characters of STR[] in place, and return STR.
  */
-char *reverse(char *s) 
+void rev_string(char *s)
 {
-  char ch, *p, *q;
+   char ch, *p, *q;
 
   for (q = s; *q != '\0'; ++q)
     ;
@@ -19,6 +19,4 @@ char *reverse(char *s)
     *p = *q;
     *q = ch;
   }
-
-  return s;
 }
