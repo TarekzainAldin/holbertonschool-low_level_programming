@@ -1,9 +1,10 @@
 #include "main.h"
+
 /**
- *-strcmp Compare tow strings
- *@s1: string
- *@s2 : string
- *return not positive number if s1 < S2
+ * _strcmp - comparing strings
+ * @s1 : var pointer
+ * @s2 : pointer
+ * Return: Always 0.
  */
 int _strcmp(char *s1, char *s2)
 {
