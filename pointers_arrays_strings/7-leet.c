@@ -1,28 +1,25 @@
 #include "main.h"
 
 /**
- * leet - encode a string into 1337
- * @s: string
- * Return: encoded string `s`
+ * leet - Encodes a string into 1337
+ * @s: String of variable pointer
+ * Return: String that is encoded
  */
-
 char *leet(char *s)
 {
-	int i;
-
-	for (i = 0; s[i] != '\0'; i++)
+  char *ptr = s;
+	unsigned int i;
+	char letter[] = {'A', 'E','O','T','L'};
+	int val[] = {4,3,0,7,1};
+	while(*s)
+	  for(i = 0; i<sizeof(letter)/sizeof(char); i++)
 	{
-		if (s[i] == 'a' || s[i] == 'A')
-			s[i] = '4';
-		if (s[i] == 'e' || s[i] == 'E')
-			s[i] = '3';
-		if (s[i] == 'o' || s[i] == 'O')
-			s[i] = '0';
-		if (s[i] == 't' || s[i] == 'T')
-			s[i] = '7';
-		if (s[i] == 'l' || s[i] == 'L')
-			s[i] = '1';
+	  if(*s == letter[i] || *s == letter[i] +32)
+	    {
+	      *s = 48 + val[i];
+	    }
 	}
+	s++;
 
-	return (s);
+	return (ptr);
 }
