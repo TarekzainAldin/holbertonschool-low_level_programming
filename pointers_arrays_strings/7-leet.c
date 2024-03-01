@@ -2,24 +2,29 @@
 
 /**
  * leet - Encodes a string into 1337
- * @s: String of variable pointer
+ * @c: String of variable pointer
  * Return: String that is encoded
  */
-char *leet(char *s)
+char *leet(char *c)
 {
-  char *ptr = s;
+	char *cp = c;
+	char key[] = {'A', 'E', 'O', 'T', 'L'};
+	int value[] = {4, 3, 0, 7, 1};
 	unsigned int i;
-	char letter[] = {'A', 'E','O','T','L'};
-	int val[] = {4,3,0,7,1};
-	while(*s)
-	  for(i = 0; i<sizeof(letter)/sizeof(char); i++)
-	{
-	  if(*s == letter[i] || *s == letter[i] +32)
-	    {
-	      *s = 48 + val[i];
-	    }
-	}
-	s++;
 
-	return (ptr);
+	while (*c)
+	{
+		for (i = 0; i < sizeof(key) / sizeof(char); i++)
+		{
+			/*32 is the difference between lower case letters and apper case letters*/
+			if (*c == key[i] || *c == key[i] + 32)
+			{
+				*c = 48 + value[i];
+			}
+		}
+		c++;
+	}
+
+	return (cp);
+
 }
